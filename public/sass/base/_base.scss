@@ -1,0 +1,22 @@
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    //this defines what 1rem is i.e 10px
+    font-size: 62.5%;
+}
+
+body{
+
+    box-sizing: border-box;
+    color: $color-dark-grey;
+    background-color: #fff; 
+  
+   
+}

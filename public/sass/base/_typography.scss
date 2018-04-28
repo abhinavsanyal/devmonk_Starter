@@ -1,0 +1,92 @@
+
+body{
+    
+    font-family: lato ,sans-serif;
+    font-size: $default-font-size;
+    font-weight: 300;
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+     backface-visibility: hidden; 
+
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
+        animation : moveInLeft  0.8s  ease-out .4s;
+     
+    }
+      
+    &--sub{
+        display: block;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 1.74rem;
+    
+        animation: moveInRight .8s  ease-out .4s;
+      
+        margin-bottom: 3.6rem;
+    }
+
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to bottom,
+    $color-grey-light-0,$color-grey-dark-1) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &--white{
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: .6rem;
+        text-transform: uppercase;
+        display: inline-block;
+        color:$color-white;
+    }
+   
+    
+}
+
+.heading-tertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+.heading-quad{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-bottom: 1px solid $color-grey-light-2;
+    border-top: 1px solid $color-grey-light-2;
+    padding: 1.5rem 3rem;
+    background-color:$color-grey-light-1;
+ 
+
+}
+
+
+
+
+.paragraph{
+    font-size: $default-font-size;
+    letter-spacing: .08rem;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
